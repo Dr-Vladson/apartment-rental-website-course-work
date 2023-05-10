@@ -1,0 +1,19 @@
+.filter-bar-block{
+    width: 300px;
+    height: 500px;
+    flex-direction: column;
+    justify-content: space-around;
+
+    border: 2px solid grey;
+}
+
+.filter-bar-block__title p {
+    font-size: 24px;
+    color: #6CAC3D;
+}
+.filter-bar-block__room-amount-checkboxes{
+    width: 100%;
+}
+.filter-bar-block__district-chooser {
+    width: 90%;
+}

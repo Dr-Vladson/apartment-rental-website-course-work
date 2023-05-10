@@ -1,0 +1,9 @@
+.flat-property-block {
+    width: fit-content;
+}
+.flat-property-block_padding {
+    padding: 3px 3px;
+}
+.flat-property-block p {
+    font-size: 20px;
+}

@@ -1,0 +1,11 @@
+.flat-district-info-block {
+    width: fit-content;
+    border-radius: 2px;
+    border: 1px solid grey;
+}
+.flat-district-info-block_padding {
+    padding: 3px 3px;
+}
+.flat-district-info-block p {
+    font-size: 20px;
+}

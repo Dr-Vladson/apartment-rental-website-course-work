@@ -1,0 +1,9 @@
+.close-button-block {
+    width: 20px;
+    height: 20px;
+}
+.close-button-block img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}

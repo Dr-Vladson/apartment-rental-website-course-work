@@ -1,9 +1,13 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
 import counterReducer from '../features/counter/counterSlice';
+import flatParametersSlice from "../features/flatParametersSlice";
+import flatsSlice from "../features/flatsSlice";
 
 export const store = configureStore({
   reducer: {
     counter: counterReducer,
+    flatParameters : flatParametersSlice,
+    flats: flatsSlice,
   },
 });
 

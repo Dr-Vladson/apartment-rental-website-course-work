@@ -1,0 +1,16 @@
+.room-amount-block{
+    border-radius: 3px;
+    padding: 12px 15px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+.room-amount-block span {
+    color: black;
+}
+.room-amount-block-active {
+    background-color: grey;
+}
+.room-amount-block-active span {
+    color: white;
+}

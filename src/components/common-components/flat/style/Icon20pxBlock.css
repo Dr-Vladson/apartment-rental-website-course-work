@@ -1,0 +1,9 @@
+.icon-20px-block{
+    width: 20px;
+    height: 20px;
+}
+.icon-20px-block img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}

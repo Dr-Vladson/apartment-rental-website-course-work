@@ -1,0 +1,9 @@
+.flat-image-block{
+    width: 100%;
+    height: 100%;
+}
+.flat-image-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

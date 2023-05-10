@@ -1,0 +1,14 @@
+.flat-block{
+    width: 370px;
+    height: 400px;
+
+
+    border: 2px solid #6CAC3D;
+}
+.flat-block__image-wrap{
+    width: 90%;
+    height: 60%;
+}
+flat-block__properties {
+
+}

@@ -1,0 +1,13 @@
+.big-btn-block {
+    width: 100%;
+    text-align: center;
+}
+.big-btn-block_style-yellowgreen {
+    background-color: #6CAC3D;
+    border-radius: 5px;
+    padding: 5% 0;
+}
+.big-btn-block_style-yellowgreen p {
+    color: white;
+    font-size: 20px;
+}
