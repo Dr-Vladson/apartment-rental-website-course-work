@@ -1,0 +1,10 @@
+.drop-down-menu-item {
+    width: 100%;
+    overflow: hidden;
+
+    background-color: white;
+    padding: 3px;
+}
+.drop-down-menu-item p {
+    font-size: 20px;
+}

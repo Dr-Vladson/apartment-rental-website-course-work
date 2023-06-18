@@ -1,4 +1,5 @@
 import "./style/FlatDescriptionBlock.css"
+
 interface FlatDescriptionBlockPropsInterface {
     description: string
 }

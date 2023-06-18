@@ -1,0 +1,11 @@
+.flats-not-found-block {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.flats-not-found-block p{
+    width: max-content;
+    font-size: 50px;
+    background-color: transparent;
+    color: #6CAC3D;
+}

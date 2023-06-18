@@ -1,0 +1,8 @@
+.whole-page-structurer{
+    flex-direction: column;
+    min-height: 100%;
+}
+.whole-page-structurer__outlet-wrap {
+    background-color: rgba(108, 172, 61, 0.1);
+    flex: 1 1 auto;
+}

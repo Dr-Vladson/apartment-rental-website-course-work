@@ -1,5 +1,6 @@
 import "./style/CloseButton.css"
-import crossIcon from "./images/cross-icon.png"
+import crossIcon from "../flat/images/cross-icon.png"
+
 interface CloseButtonPropsInterface {
     closeButtonOnClick: (e: React.MouseEvent) => void
 }

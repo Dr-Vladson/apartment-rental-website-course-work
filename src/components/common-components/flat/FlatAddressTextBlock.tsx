@@ -1,4 +1,5 @@
 import "./style/FlatAddressTextBlock.css"
+
 interface FlatAddressTextBlockPropsInterface {
     addressString : string
 }

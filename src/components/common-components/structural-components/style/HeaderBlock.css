@@ -1,0 +1,25 @@
+.header-wrap{
+    background-color: #6CAC3D;
+    height: 100px;
+    width: 100%;
+}
+.header-block {
+    width: 1200px;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+.header-block_link:hover {
+    color: navy;
+}
+.header-block_link {
+    font-size: 30px;
+    color: white;
+}
+.header-block_link:visited{
+    color: white;
+}
+.active {
+
+}

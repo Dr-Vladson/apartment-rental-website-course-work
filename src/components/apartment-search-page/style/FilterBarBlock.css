@@ -1,14 +1,20 @@
+.filter-bar-wrap {
+    width: 370px;
+    height: 400px;
+}
 .filter-bar-block{
     width: 300px;
-    height: 500px;
+    height: 100%;
     flex-direction: column;
     justify-content: space-around;
 
     border: 2px solid grey;
+    padding: 1%;
+    margin: 4px 0;
 }
 
 .filter-bar-block__title p {
-    font-size: 24px;
+    font-size: 22px;
     color: #6CAC3D;
 }
 .filter-bar-block__room-amount-checkboxes{

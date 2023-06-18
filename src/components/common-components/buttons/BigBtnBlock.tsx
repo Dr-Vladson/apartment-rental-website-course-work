@@ -1,12 +1,13 @@
 import "./style/BigBtnBlock.css"
+
 interface BigBtnBlockPropsInterface {
-    uniqueStyleCSSClass : string
+    uniqueStyleCSSClass ?: string
     btnText : string
-    onClickFucn : (e: React.MouseEvent) => void
+    onClickFunc : (e: React.MouseEvent) => void
 }
-export default function BigBtnBlock ({uniqueStyleCSSClass, btnText, onClickFucn}:BigBtnBlockPropsInterface){
+export default function BigBtnBlock ({uniqueStyleCSSClass, btnText, onClickFunc}:BigBtnBlockPropsInterface){
     return(
-        <div onClick={onClickFucn} className={`big-btn-block ${uniqueStyleCSSClass}`}>
+        <div onClick={onClickFunc} className={`big-btn-block ${uniqueStyleCSSClass || ''}`}>
             <p>{btnText}</p>
         </div>
     )

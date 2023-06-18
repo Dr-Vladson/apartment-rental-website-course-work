@@ -1,6 +1,7 @@
 import "./style/RoomAmountCheckboxBlock.css"
 import {roomAmount} from "../../../models";
 import React, {Dispatch, SetStateAction} from "react";
+
 interface RoomAmountCheckboxBlockPropsInterface {
     roomAmount : roomAmount
     isIncluded : boolean

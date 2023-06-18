@@ -1,4 +1,5 @@
 import "./style/Icon20pxBlock.css"
+
 interface Icon20pxBlockPropsInterface {
     iconPng : string
     altDescription : string

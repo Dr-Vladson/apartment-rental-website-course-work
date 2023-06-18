@@ -1,0 +1,6 @@
+.del-and-edit-btns-block {
+    justify-content: space-around;
+}
+.del-and-edit-btns-block__btn {
+    width: 100px;
+}

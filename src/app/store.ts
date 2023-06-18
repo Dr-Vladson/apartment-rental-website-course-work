@@ -1,11 +1,9 @@
-import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
-import flatParametersSlice from "../features/flatParametersSlice";
-import flatsSlice from "../features/flatsSlice";
+import {Action, configureStore, ThunkAction} from '@reduxjs/toolkit';
+import flatParametersSlice from "../features/slices/flatParametersSlice";
+import flatsSlice from "../features/slices/flatsSlice";
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
     flatParameters : flatParametersSlice,
     flats: flatsSlice,
   },

@@ -1,0 +1,27 @@
+.input-with-drop-down-menu {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.input-with-drop-down-menu__input-container {
+    width: 100%;
+    height: 100%;
+
+    padding: 3px;
+    border: 1px solid black;
+    background-color: white;
+}
+.input-with-drop-down-menu__input-container input {
+    font-size: 20px;
+    width: 100%;
+}
+.input-with-drop-down-menu__drop-down-menu-container {
+    display: none;
+    width: 100%;
+    position: absolute;
+
+    border: 1px solid blue;
+}
+.input-with-drop-down-menu__drop-down-menu-container_active {
+    display: block;
+}

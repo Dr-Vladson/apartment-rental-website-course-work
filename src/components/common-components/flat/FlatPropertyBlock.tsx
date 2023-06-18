@@ -1,4 +1,5 @@
 import "./style/FlatPropertyBlock.css"
+
 interface FlatPropertyBlockPropsInterface {
     children: React.ReactNode
     text : string

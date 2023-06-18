@@ -11,9 +11,10 @@ import priceIcon from "./images/price-icon.png";
 import calendarIcon from "./images/calendar-icon.png";
 import phoneIcon from "./images/phone-icon.png"
 import FlatDescriptionBlock from "./FlatDescriptionBlock";
-import CloseButton from "./CloseButton";
-import {setCurrentFlat} from "../../../features/flatsSlice";
+import CloseButton from "../buttons/CloseButton";
+import {setCurrentFlat} from "../../../features/slices/flatsSlice";
 import React, {MutableRefObject} from "react";
+
 interface FlatFullBlockPropsInterface {
     currentFlatBlockRef : MutableRefObject<HTMLDivElement | null>
 }
@@ -28,39 +29,40 @@ export default function FlatFullBlock ({currentFlatBlockRef}:FlatFullBlockPropsI
         dispatch(setCurrentFlat(null))
     }
 
-    const {address, roomAmount, mainImage, additionalImage,ownerPhoneNumber, district, description, longTermRental, price} = flat
+    const {address, roomAmount, mainImage, additionalImage,ownerPhoneNumber, district, description, rentalTermType, price} = flat
     return(
         <div className={"flat-full-block"} ref={currentFlatBlockRef}>
             <div className={"flat-full-block__header dflex"}>
                 <FlatAddressTextBlock addressString={address}/>
                 <div className={"flat-full-block__close-btn-wrap"}><CloseButton closeButtonOnClick={closeButtonOnClick}/></div>
             </div>
-            <div className={"flat-full-block__images dflex"}>
-                <div className={"flat-full-block__image-wrap"}>
-                    <FlatImageBlock imageRef={mainImage}/>
+            <div className={"flat-full-block__main dflex"}>
+                <div className={"flat-full-block__images dflex"}>
+                    <div className={"flat-full-block__image-wrap"}>
+                        <FlatImageBlock imageRef={mainImage}/>
+                    </div>
+                    <div className={"flat-full-block__image-wrap"}>
+                        <FlatImageBlock imageRef={additionalImage}/>
+                    </div>
                 </div>
-                <div className={"flat-full-block__image-wrap"}>
-                    <FlatImageBlock imageRef={additionalImage}/>
+                <div className={"flat-full-block__properties dflex"}>
+                    <FlatDistrictInfoBlock districtString={district}>
+                        <Icon20pxBlock iconPng={districtIcon} altDescription={`Іконка район...`}/>
+                    </FlatDistrictInfoBlock>
+                    <FlatPropertyBlock text={`${roomAmount} кімн`}>
+                        <Icon20pxBlock iconPng={roomAmountIcon} altDescription={"Іконка кількість кімнат..."}/>
+                    </FlatPropertyBlock>
+                    <FlatPropertyBlock text={`${price} грн`}>
+                        <Icon20pxBlock iconPng={priceIcon} altDescription={"Іконка ціна..."}/>
+                    </FlatPropertyBlock>
+                    <FlatPropertyBlock text={rentalTermType}>
+                        <Icon20pxBlock iconPng={calendarIcon} altDescription={"Іконка телефон..."}/>
+                    </FlatPropertyBlock>
+                    <FlatPropertyBlock text={ownerPhoneNumber}>
+                        <Icon20pxBlock iconPng={phoneIcon} altDescription={"Іконка календар"}/>
+                    </FlatPropertyBlock>
                 </div>
-            </div>
-            <div className={"flat-full-block__properties dflex"}>
-                <FlatDistrictInfoBlock districtString={district}>
-                    <Icon20pxBlock iconPng={districtIcon} altDescription={`Іконка район...`}/>
-                </FlatDistrictInfoBlock>
-                <FlatPropertyBlock text={`${roomAmount} кімн`}>
-                    <Icon20pxBlock iconPng={roomAmountIcon} altDescription={"Іконка кількість кімнат..."}/>
-                </FlatPropertyBlock>
-                <FlatPropertyBlock text={`${price} грн`}>
-                    <Icon20pxBlock iconPng={priceIcon} altDescription={"Іконка ціна..."}/>
-                </FlatPropertyBlock>
-                <FlatPropertyBlock text={longTermRental? "Довгостроково" : "Подобово"}>
-                    <Icon20pxBlock iconPng={calendarIcon} altDescription={"Іконка телефон..."}/>
-                </FlatPropertyBlock>
-                <FlatPropertyBlock text={`+380${ownerPhoneNumber}`}>
-                    <Icon20pxBlock iconPng={phoneIcon} altDescription={"Іконка календар"}/>
-                </FlatPropertyBlock>
-            </div>
-            <FlatDescriptionBlock description={description}/>
+                <FlatDescriptionBlock description={description}/></div>
         </div>
     )
 }

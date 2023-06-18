@@ -7,7 +7,28 @@
     border-radius: 5px;
     padding: 5% 0;
 }
+.big-btn-block_style-silver {
+    border: 2px solid grey;
+    background-color: silver;
+    border-radius: 5px;
+    padding: 5% 0;
+}
+.big-btn-block_style-silver:hover{
+    background-color: grey;
+}
+.big-btn-block_style-silver p{
+    color: white;
+    font-size: 20px;
+}
 .big-btn-block_style-yellowgreen p {
     color: white;
     font-size: 20px;
+}
+.big-btn-block_style-transparent-black-border {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5% 0;
+}
+.big-btn-block_style-transparent-black-border:hover {
+    background-color: #6CAC3D;
 }

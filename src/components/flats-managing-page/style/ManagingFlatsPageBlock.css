@@ -1,0 +1,24 @@
+.managing-flats-page-block__managing-options-bar-wrap {
+    width: 100%;
+    height: 70px;
+    border-bottom: 2px solid #6CAC3D;
+}
+.managing-flats-page-block__managing-options-bar {
+    justify-content: space-around;
+    align-items: center;
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.managing-flats-page-block__flats-not-found-wrap {
+    width: 100%;
+    height: 300px;
+}
+.managing-flats-page-block__add-btn-wrap {
+    height: 50%;
+    width: 200px;
+}
+.managing-flats-page-block__user-flats-wrap {
+    margin: 0 auto;
+    width: 1200px;
+}
